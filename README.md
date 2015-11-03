@@ -5,13 +5,17 @@ Make the file executable
 ```sh
 $ chmod +x wp.sh
 ```
-
-Move or copy the file where is your binary folder to make it global.
+Run the script
+```sh
+./wp.sh
+```
+Or move  the file where is your binary folder to make it global.
 ```sh
 $ sudo mv wp.sh /usr/bin/wp.sh
 ```
 cd themes directory
 And run it
+
 ```sh
 $ wp.sh
 ```
