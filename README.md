@@ -6,9 +6,14 @@ Make the file executable
 $ chmod +x wp.sh
 ```
 
-And run the file 
+Move or copy the file where is your binary folder to make it global.
 ```sh
-$ ./wp.sh
+$ sudo mv wp.sh /usr/bin/wp.sh
+```
+cd themes directory
+And run it
+```sh
+$ wp.sh
 ```
 
 Give Your theme name, author name, author uri and the theme will be created.
