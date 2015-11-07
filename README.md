@@ -11,13 +11,13 @@ Run the script
 ```
 Or move  the file where is your binary folder to make it global.
 ```sh
-$ sudo mv wp.sh /usr/bin/wp.sh
+$ sudo mv wp.sh /usr/bin/wp
 ```
 cd themes directory
 And run it
 
 ```sh
-$ wp.sh
+$ wp
 ```
 
 Give Your theme name, author name, author uri and the theme will be created.
