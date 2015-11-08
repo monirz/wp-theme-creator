@@ -1,13 +1,18 @@
 #!/bin/bash
 
 echo "Enter your theme name: \n"
-
 read text
 
-mkdir $text
+if [ -d "$text" ] ; then
+
+echo "Error : directory exists!"
+exit 1
+
+else  
+mkdir -v  $text
+fi
 
 cd $text
-
 
 index=index.php
 header=header.php
@@ -132,7 +137,7 @@ cat <<EOF1 > $singles
 EOF1
 
 cat <<EOF1 > $pagenotfound
- 
+<h1> 404! This page could not be found </h1> 
 EOF1
 
 echo "/*" > $style
@@ -169,17 +174,8 @@ Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, 
 
 EOF1
 
-mkdir js
-echo "js directory created"
-mkdir css
-echo "css directory created"
-mkdir images
-mkdir fonts
-
-
-
-
-
-
-  
+mkdir -v js
+mkdir -v css
+mkdir -v images
+mkdir -v fonts
 
