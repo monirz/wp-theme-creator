@@ -5,7 +5,7 @@ read text
 
 if [ -d "$text" ] ; then
 
-echo "Error : directory exists!"
+echo "Error : directory exists! Try again and choose another director name"
 exit 1
 
 else  
